@@ -1,0 +1,19 @@
+source https://api.nuget.org/v3/index.json
+nuget TaskBuilder.fs
+
+group Tests
+  source https://api.nuget.org/v3/index.json
+  nuget Microsoft.NET.Test.Sdk
+  nuget xunit
+  nuget xunit.runner.visualstudio
+  nuget TaskBuilder.fs
+
+// [ FAKE GROUP ]
+group Build
+  source https://api.nuget.org/v3/index.json
+  nuget Fake.Core.Target
+  nuget Fake.IO.FileSystem
+  nuget Fake.DotNet.Cli
+  nuget Fake.DotNet.MSBuild
+  nuget Fake.DotNet.Paket
+  nuget Fake.DotNet.Testing.Expecto

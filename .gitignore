@@ -1,0 +1,23 @@
+#ignore thumbnails created by windows
+Thumbs.db
+.DS_Store
+#Ignore files build by Visual Studio
+docs/
+docsBuild/
+report/
+obj/
+build/
+[Bb]in
+[Rr]elease*/
+[Tt]est[Rr]esult*
+*.suo
+*/*.suo
+*.user
+*.userprefs
+deploy/
+
+paket-files/
+.fake
+packages
+# Ignore VS2015 folder
+.vs/
