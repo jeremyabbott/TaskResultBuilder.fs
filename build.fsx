@@ -35,7 +35,7 @@ Target.create "BuildLibrary" (fun _ ->
 
 
 Target.create "RunUnitTests" (fun _ ->
-  DotNet.test id "./Tests/TaskBuilder.Tests.fsproj"
+  DotNet.test (fun testOptions -> { testOptions with NoRestore = true }) "./Tests/TaskBuilder.Tests.fsproj"
 )
 // Default target
 Target.create "Default" (fun _ ->
